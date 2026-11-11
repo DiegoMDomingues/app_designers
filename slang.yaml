@@ -1,0 +1,15 @@
+# existing config
+base_locale: en
+# base_locale: pt #only set pt to generate translations files, use en as default lang
+fallback_strategy: base_locale
+input_directory: lib/i18n
+input_file_pattern: .i18n.json
+output_directory: lib/i18n
+
+gpt:
+  model: gpt-4o-mini
+  max_input_length: 4000
+  description: |
+    The Biologix sleep test is simple and affordable and can be done at home.
+    When it's time to sleep, simply place the Oxistar sensor on your finger and start the exam in the Biologix app.
+    When you wake up, the report is ready in seconds.

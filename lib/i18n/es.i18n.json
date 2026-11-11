@@ -1,0 +1,101 @@
+{
+  "app": "Utility Designers",
+  "bodystar": {
+    "connect": "Conectar Bodystar",
+    "connection": "Conexión Bodystar",
+    "found_sensors": "Se encontraron algunos sensores Bodystar cercanos.",
+    "found_more_than_one": "Se encontraron más de un sensor Bodystar cerca del teléfono. Elige qué sensor quieres usar para este examen.",
+    "success_connected": "Bodystar conectado con éxito",
+    "connected": "¡El sensor Bodystar está conectado!\nAhora, colócalo en tu cuerpo:",
+    "insert_tap": "Coloca una tira de manera horizontal sobre el Bodystar, dejando exceso a los lados para la fijación.",
+    "how_to_position": "Cómo posicionar el sensor Bodystar",
+    "position_tap": "Coloca la cinta a 10 cm horizontalmente sobre el Bodystar, dejando exceso a los lados.",
+    "position_chest": "Coloca el sensor verticalmente, justo debajo de la línea de la clavícula. El botón y el LED deben estar orientados hacia el cuello.",
+    "how_to_connect": "Cómo conectar el sensor Bodystar",
+    "align": "Coloca el sensor verticalmente justo debajo de la línea de la clavícula, con el botón y el LED orientados hacia el cuello.",
+    "where_position": "Dónde posicionar el Bodystar",
+    "where_position_chest": "El sensor Bodystar debe posicionarse en el área del pecho cerca del esternón.\n\nEl esternón es el hueso ubicado en la línea media anterior de nuestro pecho y forma parte de la cavidad torácica anterior.",
+    "connect_bluetooth": "Para conectar el Bodystar a tu teléfono, utiliza la tecnología Bluetooth. Recuerda activar el Bluetooth en tu smartphone.",
+    "how_to_turn_on": "Cómo encender el Bodystar",
+    "localize_central_button": "Para encender el sensor, simplemente encuentra y presiona el botón de acción ubicado en la parte central superior del Bodystar.",
+    "idle_turn_on": "Enciende el Bodystar para comenzar la conexión.",
+    "press_button_to_turn_on": "Para empezar, enciende el Bodystar presionando el botón de acción.",
+    "after_turned_on": "Después de encenderlo, espera hasta que el LED azul parpadee, indicando que el sensor está listo para conectarse.",
+    "after_turned_on_advance": "Después de encender el sensor, espera hasta que el LED azul comience a parpadear y avanza para conectarte.",
+    "low_battery": "El sensor Bodystar tiene poca batería.",
+    "positions": {
+      "top": "Supino",
+      "bottom": "Ventral",
+      "left": "Izquierda",
+      "right": "Derecha",
+      "other": "Otros"
+    },
+    "check_tap_body": "Asegúrate de que el sensor esté firmemente sujeto y seguro en el cuerpo.",
+    "sensor_not_found": "Sensor no encontrado",
+    "error_connecting": "Error al conectar con Bodystar"
+  },
+  "sensor_not_found": "Sensor no encontrado",
+  "connected_successfully": "Conectado con éxito",
+  "sensor_not_connected": "Sensor no conectado",
+  "need_bluetooth_ios": "Necesita activar Bluetooth",
+  "error_connecting_to_sensor": "Error al conectar con el sensor",
+  "home": {
+    "error": {
+      "at_least_one_device": "Al menos un dispositivo debe estar activado.",
+      "min_duration": "La grabación debe durar al menos $min minuto(s)."
+    },
+    "recording": {
+      "title": "Grabando",
+      "subtitle": "Grabando...",
+      "duration": "Duración",
+      "label": "Grabación"
+    },
+    "share": {
+      "subject": "Archivo de grabación"
+    },
+    "stop_recording": {
+      "title": "Detener grabación",
+      "description": "¿Realmente desea detener la grabación?",
+      "no": "No",
+      "yes": "Sí"
+    },
+    "last_recording": {
+      "title": "Última grabación",
+      "file": "Archivo",
+      "size": "Tamaño",
+      "share": "Compartir Archivo"
+    }
+  },
+  "history": {
+    "title": "Historial",
+    "delete_all": "Borrar todo",
+    "empty": "No se encontraron archivos",
+    "delete_dialog": {
+      "title": "Borrar archivo",
+      "title_all": "Borrar todo",
+      "description": "¿Realmente desea borrar el archivo $file?",
+      "description_all": "¿Realmente desea borrar todos los archivos?",
+      "cancel": "Cancelar",
+      "delete": "Borrar",
+      "delete_now": "Borrar ahora",
+      "delete_countdown": "Borrar ($count)"
+    }
+  },
+  "widgets": {
+    "choose_bodystar": {
+      "title": "Sensores Bodystar encontrados",
+      "subtitle": "Se encontraron más de un sensor Bodystar",
+      "description": "Seleccione el sensor Bodystar deseado"
+    },
+    "choose_oxistar": {
+      "title": "Sensores Oxistar encontrados",
+      "subtitle": "Se encontraron más de un sensor Oxistar",
+      "description": "Seleccione el sensor Oxistar deseado"
+    }
+  },
+  "recording_data": "Grabando datos",
+  "sensor_is_already_connected": "El sensor ya está conectado",
+  "do_not_turn_off_screen": "No apagues la pantalla",
+  "do_not_turn_off_screen_description": "Si la pantalla del teléfono se apaga, el dispositivo puede dejar de grabar. El brillo de la pantalla disminuirá automáticamente para evitar un consumo excesivo de batería.",
+  "searching": "Buscando..."
+}

@@ -1,0 +1,50 @@
+
+def mavenGithubUser = System.getenv("MAVEN_GITHUB_USER")
+def mavenGithubToken = System.getenv("MAVEN_GITHUB_TOKEN")
+def securePath = System.getenv("BIOLOGIX_KEYS_PATH") ?: "${System.env.HOME}/Keys"
+
+if (mavenGithubUser == null || mavenGithubToken == null) {
+    def mavenPropsFile = file(securePath + "/maven-repo/maven.properties")
+    if (mavenPropsFile.canRead()) {
+        Properties mavenProps = new Properties()
+        mavenProps.load(new FileInputStream(mavenPropsFile))
+        mavenGithubUser = mavenProps["GITHUB_USER"]
+        mavenGithubToken = mavenProps["GITHUB_TOKEN"]
+    } else {
+        throw new Exception("Could not read " + mavenPropsFile)
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenLocal()
+        mavenCentral()
+        maven {
+            url = 'https://maven.pkg.github.com/biologixsistemas/cicd'
+            credentials {
+                username = mavenGithubUser
+                password = mavenGithubToken
+            }
+        }
+    }
+}
+
+
+rootProject.layout.buildDirectory.set(rootProject.file('../build'))
+subprojects {
+    project.layout.buildDirectory.set(rootProject.layout.buildDirectory.dir(project.name))
+    project.evaluationDependsOn(':app')
+    tasks.withType(JavaCompile).configureEach {
+        // Pub-cache plugins still compile against source/target 8 and call deprecated Android
+        // APIs; nothing here can fix that, so only our own modules opt into the noise.
+        options.compilerArgs << '-Xlint:-options'
+        if (project.name in ['app', 'biologix_base_lib']) {
+            options.compilerArgs << '-Xlint:deprecation'
+        }
+    }
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.layout.buildDirectory
+}

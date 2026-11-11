@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#111C21"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:contentDescription="Logo" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/logo"
+            android:layout_alignTop="@id/logo"
+            android:layout_marginStart="12dp"
+            android:text="Exame do sono com posição"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/icons_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ic_mic"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="Mic Icon" />
+
+            <ImageView
+                android:id="@+id/ic_bodystar"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="Bodystar" />
+
+            <ImageView
+                android:id="@+id/ic_oxistar"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:contentDescription="Oxitar" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/subtitle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tempo do exame"
+            android:textColor="@android:color/white"
+            android:textSize="10sp" />
+
+        <Chronometer
+            android:id="@+id/timer_chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="23sp" />
+    </LinearLayout>
+</LinearLayout>

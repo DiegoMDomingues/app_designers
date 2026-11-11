@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "app_designers (debug)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "flutterMode": "debug",
+      "env": {
+        // Pasta com maven-repo/maven.properties (acesso aos pacotes Android da Biologix).
+        "BIOLOGIX_KEYS_PATH": "${env:USERPROFILE}\\Keys"
+      }
+    }
+  ]
+}
